@@ -5,7 +5,7 @@
 
 ## ABSTRACT
 
-Make use of aws Security Hub service to launch a fast vulnerability assessment against your aws asset.
+Make use of aws Security Hub service to launch a fast vulnerability assessment against your aws assets.
 
 ## Requirements
 
@@ -14,7 +14,7 @@ Make use of aws Security Hub service to launch a fast vulnerability assessment a
 ## GitHub Action
 This repository has associated a GitHub action that does the following: 
 <br>
-* 1 check for any software vulnerabilities via [Snyk](https://app.snyk.io)
+* 1 Check for any software vulnerabilities via [Snyk](https://app.snyk.io) api.
 * 2 If no vuln are found, build the docker image on [DockerHub](https://hub.docker.com/).
 
 
@@ -29,7 +29,7 @@ git clone https://github.com/R3DRUN3/aws-secops.git  \
 && go run main.go
 ```
 
-You can also build the docker image yourself or download it from docker hub.
+You can also build the docker image yourself or download it from [this](https://hub.docker.com/repository/docker/r3drun3/aws-secops) docker hub repo.
 
 To run as a docker container you need to set some mandatory env vars:
 
