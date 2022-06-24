@@ -22,7 +22,7 @@ func main() {
 	awsSecret = os.Getenv("AWS_SECRET_ACCESS_KEY")
 	var awsSession *session.Session
 	if awsRegion != "" && awsKey != "" && awsSecret != "" {
-		//Read region and keys from  env vars (mainly for docker container mode)
+		//Read region and keys from  env vars (mainly for docker mode)
 		sess, err := session.NewSession(&aws.Config{
 			Region:      aws.String(awsRegion),
 			Credentials: credentials.NewStaticCredentials(awsKey, awsSecret, "")},
@@ -34,7 +34,7 @@ func main() {
 		}
 		awsSession = sess
 	} else {
-		//Read region and keys from  ~/.aws/config and  ~/.aws/credentials
+		//Read region and keys from  ~/.aws/config and  ~/.aws/credentials (for local usage)
 		sess := session.Must(session.NewSessionWithOptions(session.Options{
 			SharedConfigState: session.SharedConfigEnable,
 		}))
@@ -51,7 +51,8 @@ func main() {
 	maxResultsPerCall := int64(100)
 	filter := securityhub.SortCriterion{Field: &orderField, SortOrder: &sortOrder}
 	var filterList []*securityhub.SortCriterion = []*securityhub.SortCriterion{&filter} //Order results by title asc
-	for {
+	for {   
+		// Retrieve SecurityHub Findings
 		input := &securityhub.GetFindingsInput{NextToken: &initialToken,
 			MaxResults:   &maxResultsPerCall,
 			SortCriteria: filterList}
