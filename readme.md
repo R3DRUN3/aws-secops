@@ -9,13 +9,21 @@ Make use of aws Security Hub service to launch a fast vulnerability assessment a
 
 `aws account` `golang version >= 1.16`
 
+## GitHub Action
+This repository has associated a GitHub action that does the following: 
+<br>
+* 1 check for any software vulnerabilities via [Snyk](https://app.snyk.io)
+* 2 If no vuln are found, build the docker image on [DockerHub](https://hub.docker.com/).
+
+
+
 ## Instructions
 
 Clone this folder and run the code:
 
 ```console
-git clone  \
-&& cd \
+git clone https://github.com/R3DRUN3/aws-secops.git  \
+&& cd aws-secops \
 && go run main.go
 ```
 
