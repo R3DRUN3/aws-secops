@@ -1,5 +1,7 @@
 # AWS SECOPS
-[![Vuln scan for aws-secops using Snyk](https://github.com/R3DRUN3/aws-secops/actions/workflows/snyk-scan.yml/badge.svg)](https://github.com/R3DRUN3/aws-secops/actions/workflows/snyk-scan.yml)
+[![Snyk scan and DockerHub push](https://github.com/R3DRUN3/aws-secops/actions/workflows/snyk-scan.yml/badge.svg)](https://github.com/R3DRUN3/aws-secops/actions/workflows/snyk-scan.yml)
+
+<p><img width="180" height="180" src="https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/cloud/amazon.svg"></p>
 
 ## ABSTRACT
 
