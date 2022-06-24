@@ -1,5 +1,11 @@
 name: Snyk scan and DockerHub Push
-on: push
+on:
+  push:
+    paths:
+      - 'main.go'
+      - 'Dockerfile'
+      - 'go.mod'
+      - 'go.sum'
 jobs:
   security:
     runs-on: ubuntu-latest
