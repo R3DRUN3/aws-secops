@@ -38,7 +38,7 @@ docker run -it --rm \
 --env AWS_REGION=AWS_REGION_HERE \
 --env AWS_ACCESS_KEY_ID=AWS_ACCESS_KEY_HERE \
 --env AWS_SECRET_ACCESS_KEY=AWS_ACCESS_SECRET_HERE \
-r3drun3/aws-secops:v1.0.0
+r3drun3/aws-secops:latest
 ```
 
 Output Sample:
