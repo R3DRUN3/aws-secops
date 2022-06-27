@@ -1,5 +1,7 @@
 # AWS SECOPS
 [![Snyk scan and DockerHub push](https://github.com/R3DRUN3/aws-secops/actions/workflows/snyk-scan.yml/badge.svg)](https://github.com/R3DRUN3/aws-secops/actions/workflows/snyk-scan.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 <p><img width="180" height="180" src="https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/cloud/amazon.svg"></p>
 
